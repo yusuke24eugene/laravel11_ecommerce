@@ -126,7 +126,7 @@ class HomeController extends Controller
         foreach($category as $category) {
             $categories[] = $category->category_name;
         }
-        $product = Product::where('category_name', 'LIKE', '%' . $search . '%')->paginate(9);
+        $product = Product::where('category_name', $search)->paginate(9);
         $countSearch = $product->count();
         return view('home.searchProduct', compact(['product', 'count', 'search', 'usertype', 'categories', 'countSearch', 'orders']));
     }
