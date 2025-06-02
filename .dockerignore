@@ -1,0 +1,35 @@
+# Node modules and vendor (will be built inside container)
+node_modules
+vendor
+
+# Laravel caches and logs
+storage/logs
+storage/framework/cache
+storage/framework/sessions
+storage/framework/views
+
+# Environment files
+.env
+.env.*.backup
+.env.testing
+
+# Composer artifacts
+composer.lock
+phpunit.xml
+
+# Git
+.git
+.gitignore
+
+# OS and editor specific files
+*.DS_Store
+*.idea
+*.vscode
+
+# Docker-related
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Tests (if not needed in production)
+tests
