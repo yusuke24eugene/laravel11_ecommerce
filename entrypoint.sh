@@ -7,6 +7,8 @@ until php artisan migrate:status > /dev/null 2>&1; do
 done
 
 # Run Laravel commands
+php artisan config:clear
+php artisan route:clear
 php artisan config:cache
 php artisan route:cache
 php artisan migrate --force
