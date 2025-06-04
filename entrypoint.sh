@@ -14,4 +14,4 @@ php artisan route:cache
 php artisan migrate --force
 
 # Start the Laravel app
-php artisan serve --host=0.0.0.0 --port=8000
+php artisan serve --host=0.0.0.0 --port=$PORT
