@@ -11,7 +11,6 @@ php artisan config:clear
 php artisan route:clear
 php artisan config:cache
 php artisan route:cache
-php artisan db:wipe
 php artisan migrate --force
 
 # Start the Laravel app
